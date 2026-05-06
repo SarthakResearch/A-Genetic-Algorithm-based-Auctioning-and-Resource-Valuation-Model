@@ -1,4 +1,4 @@
-package GARV;
+package SourceCode;
 import java.util.*;
 public class Main {
 	static List<Task> tasks = new ArrayList<>();
@@ -6,8 +6,8 @@ public class Main {
 	static List<TaskVmPair> finalAllocationList = new ArrayList<>();
 	public static void main(String[] args) {
         try {
-            tasks = Utils.readTasks("G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision 2\\Dataset\\TaskDataset\\TaskDataset100.csv");
-            vms = Utils.readVMs("G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision 2\\Dataset\\VmDataset\\100VmDataset.csv");
+            tasks = Utils.readTasks("TaskDataset100.csv");
+            vms = Utils.readVMs("100VmDataset.csv");
             
             
             GeneticAlgorithm ga = new GeneticAlgorithm(tasks, vms);

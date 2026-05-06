@@ -1,4 +1,4 @@
-package GARV;
+package SourceCode;
 
 public class VM {
 	public int id;
