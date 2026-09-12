@@ -9,8 +9,8 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            tasks = Utils.readTasks("G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\Dataset\\TaskDataset\\TaskDataset100.csv");
-            vms = Utils.readVMs("G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\Dataset\\VmDataset\\100VmDataset.csv");
+            tasks = Utils.readTasks("TaskDataset100.csv");
+            vms = Utils.readVMs("100VmDataset.csv");
 
             int numRuns = 10;
 
