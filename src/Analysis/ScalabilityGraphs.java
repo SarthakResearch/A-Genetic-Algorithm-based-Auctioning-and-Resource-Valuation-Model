@@ -1,5 +1,3 @@
-package GARVaverageEachRunResultEvaluation;
-
 import java.awt.*;
 import java.awt.geom.*;
 import java.awt.image.BufferedImage;
@@ -8,9 +6,9 @@ import java.util.*;
 public class ScalabilityGraphs {
 
     // ---- Settings to edit ------------------------------------------------------
-    static String RESULTS_DIR = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\New Results\\Evaluation_Results";
-    static String SCAL_DIR    = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\New Results\\Scalability_Results";
-    static String GRAPH_DIR   = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\New Results\\Scalability_Results";
+    static String RESULTS_DIR = "Results\\Evaluation_Results";
+    static String SCAL_DIR    = "Results\\Scalability_Results";
+    static String GRAPH_DIR   = "Results\\Scalability_Results";
     static boolean ERROR_BARS = true;
 
     static final int[] ROUNDS = {1, 2, 3, 4, 5};
