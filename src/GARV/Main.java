@@ -11,8 +11,8 @@ public class Main {
     static double rawScore = 0;
  
     // ---- Settings to edit ------------------------------------------------------
-    static String AR_FOLDER = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\GARV_Datasets\\evaluation\\AR5";
-    static String OUT_DIR = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\New Results\\Evaluation_Results";
+    static String AR_FOLDER = "datasets\\evaluationDataset\\AR1";
+    static String OUT_DIR = "Results\\Evaluation_Results";
     static int NUM_RUNS = 10;
     static final String ALGO = "GARV";
  
