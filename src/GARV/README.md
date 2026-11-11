@@ -70,6 +70,3 @@ Requirements: Java 8 or later; no external libraries.
 | `GARV_AR<r>_InstanceMeans.csv` | One row per instance: the mean of each metric over its runs, plus its run-to-run SD (`SD_<metric>`). |
 | `GARV_AR<r>_Summary.csv` | One row per metric: mean, SD and 95% confidence interval over the 30 instances, and the mean run-to-run SD. |
 | `GARV_AR<r>_Allocations.csv` | The final allocation of every run: `Round,Instance,Run,Seed,TaskID,VMID,Executed`. |
-
-
-These files are the input of the analysis classes (graphs, summary table, statistical tests, optimality gap and stability analysis) in the `ResultGraphs` folder.
