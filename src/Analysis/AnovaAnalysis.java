@@ -1,45 +1,10 @@
-package GARVaverageEachRunResultEvaluation;
-
 import java.io.*;
 import java.util.*;
 
-/*
- * ============================================================================
- * ANOVA OF THE THREE-STAGE DOE (Section 6.5)
- * ============================================================================
- * Input  (all in FOLDER):
- *   DOE_Stage1_Runs.csv   Stage I   (population x generations)
- *   DOE_Stage2_Runs.csv   Stage II  (crossover, mutation, tournament size)
- *   DOE_Stage3_Runs.csv   Stage III (omega)
- *
- * Unit of analysis
- *   The tuning instance is the independent unit. For every configuration the
- *   REPS seeded runs on the same instance are first averaged, giving one value
- *   per (configuration, instance). The instance is then included as a
- *   blocking factor, so that differences between instances are removed from
- *   the error term (randomized complete block design).
- *
- * Models (balanced design, so the sums of squares are exact)
- *   Stage I  : Y = Pop + Gen + Pop x Gen + Instance + Error
- *              (only the 5 x 5 grid; the extended 400-800 generation runs are
- *               a separate one-factor follow-up and are not part of the grid)
- *   Stage II : Y = Level + Instance + Error, separately for crossover rate,
- *              mutation rate and tournament size
- *   Stage III: Y = Omega + Instance + Error, for omega in [OMEGA_MIN, OMEGA_MAX]
- *              (levels above 100 produce identical allocations; see 6.4)
- *   Y = CSR and Y = PSR.
- *
- * Output
- *   Console tables (SS, df, MS, F, p-value, F-critical at alpha = 0.05) and
- *   level means, plus FOLDER/ANOVA_Results.csv and FOLDER/ANOVA_LevelMeans.csv.
- *   p-values use the F distribution, computed here with the regularized
- *   incomplete beta function (no external library needed).
- * ============================================================================
- */
 public class AnovaAnalysis {
 
     // ---- Settings to edit ------------------------------------------------------
-    static String FOLDER = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\New Results\\ANOVA_Results";
+    static String FOLDER = "Results\\ANOVA_Results";
     static String[] METRICS = {"CSR", "PSR"};
     static double ALPHA = 0.05;
     static double OMEGA_MIN = 5, OMEGA_MAX = 100;
