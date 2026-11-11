@@ -1,5 +1,3 @@
-package GARVaverageEachRunResultEvaluation;
-
 import javax.imageio.*;
 import javax.imageio.metadata.*;
 import javax.imageio.stream.ImageOutputStream;
@@ -14,8 +12,8 @@ import org.w3c.dom.Node;
 public class EvaluationGraphs {
 
     // ---- Settings to edit ------------------------------------------------------
-    static String RESULTS_DIR = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\New Results\\Evaluation_Results";
-    static String GRAPH_DIR   = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\New Results\\Evaluation_Graphs";
+    static String RESULTS_DIR = "Results\\Evaluation_Results";
+    static String GRAPH_DIR   = "Results\\Evaluation_Graphs";
     static boolean IEI_ERROR_BARS = true;
 
     // Font sizes in points at the final printed size (90 mm wide)
