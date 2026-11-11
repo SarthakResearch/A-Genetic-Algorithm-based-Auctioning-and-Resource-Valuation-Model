@@ -1,7 +1,3 @@
-package GARVaverageEachRunResultEvaluation;
-
-
-
 import java.io.*;
 import java.util.*;
 
@@ -9,9 +5,9 @@ import java.util.*;
 public class OptimalityGap {
 
     
-    static String DATASET_DIR = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\GARV_Datasets\\evaluation";
-    static String RESULTS_DIR = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\New Results\\Evaluation_Results";
-    static String OUT_FILE = "Optimality_Gap.csv";   // written into RESULTS_DIR
+    static String DATASET_DIR = "Datasets\\evaluation";
+    static String RESULTS_DIR = "Results\\Evaluation_Results";
+    static String OUT_FILE = "Optimality_Gap.csv";  
 
     static final double OMEGA = 100;     // must equal OMEGA in GeneticAlgorithm
     static final int[] ROUNDS = {1, 2, 3, 4, 5};
