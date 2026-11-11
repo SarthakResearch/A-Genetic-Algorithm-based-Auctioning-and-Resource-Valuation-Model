@@ -11,7 +11,7 @@ This folder contains the implementation of **GARV (Genetic Algorithm based Aucti
 | `TaskVmPair.java` | One allocated task–VM pair. |
 | `Chromosome.java` | A GA chromosome (permutation of gene indices) and its fitness. |
 | `Utils.java` | Reads the task and VM CSV files of an instance. |
-| `GeneticAlgorithm.java` | Winner determination (Section 4.2): encoding, fitness, tournament selection, order crossover, swap mutation, elitism. Also computes the Revenue − Penalty value used in the optimality gap analysis (Section 7.14). |
+| `GeneticAlgorithm.java` | Winner determination: encoding, fitness, tournament selection, order crossover, swap mutation, elitism. Also computes the Revenue − Penalty value used in the optimality gap analysis. |
 | `Execution.java` | Executes the allocated pairs and applies the pricing model: payments, provider incentives, user compensation and discards. |
 | `Results.java` | Computes the evaluation metrics. |
 | `EachRunAllocationResult.java` | Writes the final allocation of every run. |
