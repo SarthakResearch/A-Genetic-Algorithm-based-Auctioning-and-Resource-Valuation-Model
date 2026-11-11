@@ -39,8 +39,8 @@ src/
 
 Each folder has its own README with full details:
 
-| Folder | What its README explains | Paper |
-|---|---|---|
+| Folder | What its README explains |
+|---|---|
 | [`src/GARV`](src/GARV) | each class, GA configuration, encoding and fitness, how to run the evaluation, output files and metrics | 
 | [`src/dataset`](src/dataset) | file formats, how heterogeneity is generated, feasibility guard, instance statistics, seeds | 
 | [`src/Analysis`](src/Analysis) | DOE tuning and ANOVA, convergence and confirmation checks, scalability, graphs, statistical tests, optimality gap, stability |
