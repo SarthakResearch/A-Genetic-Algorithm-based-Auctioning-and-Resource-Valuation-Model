@@ -1,14 +1,11 @@
-package GARVaverageEachRunResultEvaluation;
-
-
 import java.io.*;
 import java.util.*;
 
 public class ScalabilityRunner {
 
     // ---- Settings to edit ------------------------------------------------------
-    static String INSTANCE = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\GARV_Datasets\\evaluation\\AR5\\EVAL_AR5_I01";
-    static String OUT_DIR = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\New Results\\Scalability_Results";
+    static String INSTANCE = "GARV_Datasets\\evaluation\\AR5\\EVAL_AR5_I01";
+    static String OUT_DIR = "Results\\Scalability_Results";
     static final int[] VM_SIZES = {20, 30, 40, 50, 60, 70, 80, 90, 100};
     static int NUM_RUNS = 10;
     static int WARMUP_RUNS = 3;
