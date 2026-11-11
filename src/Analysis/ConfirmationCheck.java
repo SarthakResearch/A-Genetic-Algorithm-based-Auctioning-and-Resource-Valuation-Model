@@ -1,29 +1,9 @@
-package GARVaverageEachRunResultEvaluation;
-
 import java.io.*;
 import java.util.*;
-
-/*
- * ============================================================================
- * CONFIRMATION CHECK of the final GA configuration
- * ============================================================================
- * Stage II varied each secondary parameter separately, so the chosen
- * combination (crossover 0.9, mutation 0.2, tournament 5) was not itself one
- * of the Stage II settings. This check compares it directly with two
- * alternative combinations, at the final generation budget and at
- * omega in {50, 100, 200} (around the chosen omega = 100):
- *     (0.9, 0.2, 5)  final combination
- *     (0.8, 0.1, 9)  combination chosen at 500 generations
- *     (0.8, 0.1, 3)  initial (default) secondary settings
- * All 10 AR2 tuning instances, 5 seeds each (1000*instance + rep).
- *
- * OUTPUT: Confirmation_Runs.csv (one row per run) and a console summary.
- * ============================================================================
- */
 public class ConfirmationCheck {
 
-	static String DATA_ROOT = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\GARV_Datasets";
-    static String OUT_DIR = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\New Results\\DOE_Results";
+	static String DATA_ROOT = "GARV_Datasets";
+    static String OUT_DIR = "Results\\DOE_Results";
     static int GENERATIONS = 1000;
     static int NUM_INSTANCES = 10;
     static int REPS = 5;
