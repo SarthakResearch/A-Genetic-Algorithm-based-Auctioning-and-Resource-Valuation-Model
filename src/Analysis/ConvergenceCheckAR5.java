@@ -1,33 +1,11 @@
-package GARVaverageEachRunResultEvaluation;
-
 import java.io.*;
 import java.util.*;
 
-/*
- * ============================================================================
- * CONVERGENCE CHECK of the tuned GA on the longest chromosome (AR5)
- * ============================================================================
- * The GA is run with the tuned configuration (pop 100, crossover 0.8,
- * mutation 0.1, tournament 9, omega 50) for MAX_GEN generations, i.e. well
- * beyond the tuned 500. Every CHECKPOINT_EVERY generations the best-so-far
- * allocation is evaluated (fitness, CSR, PSR, SW).
- *
- * Instances: the convergence tuning instances TUNE_AR5_I01..I05 (250 tasks,
- * chromosome length 250). For reference, the first 5 AR2 tuning instances
- * (chromosome length 100) are run as well.
- * Seeds: 1000*instance + rep, as in the DOE.
- *
- * OUTPUT (in OUT_DIR)
- *   Convergence_Runs.csv     one row per run and checkpoint
- *   Convergence_Summary.csv  one row per round and checkpoint (means, SDs)
- *   plus a summary table printed on the console.
- * ============================================================================
- */
 public class ConvergenceCheckAR5 {
 
     // ---- Settings to edit ------------------------------------------------------
-	static String DATA_ROOT = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\GARV_Datasets";
-    static String OUT_DIR = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\New Results\\DOE_Results";
+	static String DATA_ROOT = "GARV_Datasets";
+    static String OUT_DIR = "Results\\DOE_Results";
     static int[] ROUNDS = {2, 5};          // AR2 = reference (length 100), AR5 = longest chromosome (250)
     static int NUM_INSTANCES = 5;
     static int REPS = 5;
