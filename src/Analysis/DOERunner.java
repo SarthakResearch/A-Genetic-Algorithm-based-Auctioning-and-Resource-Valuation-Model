@@ -1,5 +1,3 @@
-package GARVaverageEachRunResultEvaluation;
-
 import java.io.*;
 import java.util.*;
 
@@ -8,8 +6,8 @@ public class DOERunner {
 
     // ---- Settings to edit ------------------------------------------------------
     static int STAGE = 3;
-    static String DATA_ROOT = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\GARV_Datasets";
-    static String OUT_DIR = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\New Results\\DOE_Results_G800";
+    static String DATA_ROOT = "GARV_Datasets";
+    static String OUT_DIR = "Results\\DOE_Results";
     static int NUM_INSTANCES = 10;
     static int REPS = 5;
 
