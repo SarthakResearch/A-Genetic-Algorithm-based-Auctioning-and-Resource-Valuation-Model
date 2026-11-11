@@ -12,14 +12,14 @@ This folder contains the implementation of **GARV (Genetic Algorithm based Aucti
 | `Chromosome.java` | A GA chromosome (permutation of gene indices) and its fitness. |
 | `Utils.java` | Reads the task and VM CSV files of an instance. |
 | `GeneticAlgorithm.java` | Winner determination (Section 4.2): encoding, fitness, tournament selection, order crossover, swap mutation, elitism. Also computes the Revenue − Penalty value used in the optimality gap analysis (Section 7.14). |
-| `Execution.java` | Executes the allocated pairs and applies the pricing model (Cases 1–4, Section 4.3): payments, provider incentives, user compensation and discards. |
-| `Results.java` | Computes the evaluation metrics (Section 3.3). |
+| `Execution.java` | Executes the allocated pairs and applies the pricing model: payments, provider incentives, user compensation and discards. |
+| `Results.java` | Computes the evaluation metrics. |
 | `EachRunAllocationResult.java` | Writes the final allocation of every run. |
 | `Main.java` | Evaluation runner: runs GARV on all instances of one auction round and writes the result files. |
 
 ## GA configuration
 
-The default values in `GeneticAlgorithm.java` are the final configuration obtained from the DOE (Sections 6.4–6.5, Table 8):
+The default values in `GeneticAlgorithm.java` are the final configuration obtained from the DOE:
 
 | Parameter | Value |
 |---|---|
@@ -71,6 +71,5 @@ Requirements: Java 8 or later; no external libraries.
 | `GARV_AR<r>_Summary.csv` | One row per metric: mean, SD and 95% confidence interval over the 30 instances, and the mean run-to-run SD. |
 | `GARV_AR<r>_Allocations.csv` | The final allocation of every run: `Round,Instance,Run,Seed,TaskID,VMID,Executed`. |
 
-**Metrics** (Section 3.3): CSR, PSR, IR, AIV, CR (= CVR in the paper), ACC, OPR, AOP, Makespan, SW, `GATimeSec` (runtime of the GA) and `RawRevenuePenalty` (Revenue − Penalty of the final best chromosome, used in Section 7.14). CSR and PSR are normalized by min(|tasks|, |VMs|); the per-pair metrics by the number of allocated pairs; Makespan and SW are computed over executed tasks only.
 
 These files are the input of the analysis classes (graphs, summary table, statistical tests, optimality gap and stability analysis) in the `ResultGraphs` folder.
