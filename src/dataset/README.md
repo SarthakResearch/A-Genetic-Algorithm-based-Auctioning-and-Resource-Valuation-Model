@@ -9,12 +9,12 @@ dataset/
 ├── DatasetGenerator.java
 ├── manifest.csv                        one row per instance (statistics below)
 ├── tuningDataset/
-│   ├── AR2/  TUNE_AR2_I01 … TUNE_AR2_I10   parameter tuning (DOE, Sections 6.4–6.5)
+│   ├── AR2/  TUNE_AR2_I01 … TUNE_AR2_I10   parameter tuning
 │   └── AR5/  TUNE_AR5_I01 … TUNE_AR5_I05   convergence check of the tuned GA
 └── evaluationDataset/
     ├── AR1/  EVAL_AR1_I01 … EVAL_AR1_I30
     ├── AR2/  …
-    └── AR5/  EVAL_AR5_I01 … EVAL_AR5_I30   performance evaluation (Sections 6.6–8)
+    └── AR5/  EVAL_AR5_I01 … EVAL_AR5_I30   performance evaluation
 ```
 
 Each instance consists of two files, `<NAME>_Tasks.csv` and `<NAME>_VMs.csv`. The names follow the pattern `<SET>_AR<r>_I<nn>`:
