@@ -41,9 +41,9 @@ Each folder has its own README with full details:
 
 | Folder | What its README explains | Paper |
 |---|---|---|
-| [`src/GARV`](src/GARV) | each class, GA configuration, encoding and fitness, how to run the evaluation, output files and metrics | Sections 3–4, 7 |
-| [`src/dataset`](src/dataset) | file formats, how heterogeneity is generated, feasibility guard, instance statistics, seeds | Section 6.2 |
-| [`src/Analysis`](src/Analysis) | DOE tuning and ANOVA, convergence and confirmation checks, scalability, graphs, statistical tests, optimality gap, stability | Sections 6.4–6.6, 7–8 |
+| [`src/GARV`](src/GARV) | each class, GA configuration, encoding and fitness, how to run the evaluation, output files and metrics | 
+| [`src/dataset`](src/dataset) | file formats, how heterogeneity is generated, feasibility guard, instance statistics, seeds | 
+| [`src/Analysis`](src/Analysis) | DOE tuning and ANOVA, convergence and confirmation checks, scalability, graphs, statistical tests, optimality gap, stability |
 
 ## Experimental Setup at a Glance
 
