@@ -1,15 +1,11 @@
-package GARVaverageEachRunResultEvaluation;
-
-
 import java.io.*;
 import java.util.*;
 
 public class StabilityAnalysis {
 
 
-    static String RESULTS_DIR = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\New Results\\Evaluation_Results";
-    static String OUT_FILE = "Stability_Analysis.csv";   // written into RESULTS_DIR
-
+    static String RESULTS_DIR = "Results\\Evaluation_Results";
+    static String OUT_FILE = "Stability_Analysis.csv";   
     static final int[] ROUNDS = {1, 2, 3, 4, 5};
 
     public static void main(String[] args) throws Exception {
