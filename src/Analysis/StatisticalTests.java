@@ -1,6 +1,3 @@
-package GARVaverageEachRunResultEvaluation;
-
-
 import java.io.*;
 import java.util.*;
 
@@ -8,7 +5,7 @@ import java.util.*;
 public class StatisticalTests {
 
     // ---- Settings to edit ------------------------------------------------------
-    static String RESULTS_DIR = "G:\\My Drive\\PhD\\Contributions\\4. Contribution 3 (GARV)\\Revision (Continued)\\H\\Revision 4\\New Results\\Evaluation_Results";
+    static String RESULTS_DIR = "Results\\Evaluation_Results";
     static String OUT_DIR = RESULTS_DIR + File.separator + "Statistical_Results";
     static double ALPHA = 0.05;
     static double Q_ALPHA = 2.569;   // Studentized range / sqrt(2), k = 4, alpha = 0.05 (Demsar, 2006)
